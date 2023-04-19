@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="login page">
+	<meta name="keywords" content="ERC login">
+	<title>ERC Login</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background-color: rgb(120, 120, 120);
+		}
+		.header{
+			float: left;
+			margin-left: 5%;
+			margin-top: 5%;
+			width: 90%;
+			height: 35px;
+			background-color: lightgray;
+			display: flex;
+			align-items: center;
+		}
+		.column-1{
+			width: 55%;
+			margin-left: 5%;
+			float: left;
+			background-color: black;
+			height: 500px;
+			border: 1px solid black;
+			color: white;
+		}
+		.column-2{
+			width: 35%;
+			float: left;
+			background-color: darkgreen;
+			height: 500px;
+			border: 1px solid green;
+		}
+		#circle-1{
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: red;
+			display: inline-block;
+			margin: 3px;
+		}
+		#circle-2{
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: yellow;
+			display: inline-block;
+			align-items: center;
+			margin: 3px;
+		}
+		#circle-3{
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			background-color: green;
+			display: inline-block;
+			margin: 3px;	
+		}
+		.register{
+			background-color: darkgreen;
+			color: white;
+			text-decoration: none;
+			border: 1px solid darkgreen;
+			padding: 10px;
+		}
+		h1{
+			font-family: sans-serif;
+			font-weight: 300;
+			margin-top: 70px;
+		}
+		img{
+			margin-left: 40px;
+			margin-top: 50px;
+		}
+		#align{
+			margin-left: 40px;
+			margin-right: 40px;
+		}
+		p{
+			font-family: sans-serif;
+			color: rgb(120, 120, 120) ;
+		}
+		li{
+			display: inline-block;
+		}
+		.nav{
+			background-color: black;
+			color: rgb(120, 120, 120);
+			font-size: 10px;
+			text-decoration: none;
+			display: inline-block;
+			padding: 20px;
+			border: none;
+		}
+		h2{
+			color: white;
+			font-family: sans-serif;
+			font-weight: 300;
+			font-size: 20px;
+			margin-top: 200px;
+			text-align: center;
+		}
+		input[type=email],input[type=password]{
+			background-color: darkgreen;
+			color: white;
+			margin-left: 130px;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 2px solid white;
+			width: 45%;
+		}
+		::placeholder{
+			color: white;
+			font-family: sans-serif;
+		}
+		#login{
+			background-color: white;
+			color: darkgreen;
+			border: 2px solid white;
+			margin-left: 130px;
+			text-decoration: none;
+			font-family: sans-serif;
+			font-weight: normal;
+			font-size: 12px;
+			padding: 7px;
+		}
+		#forgot{
+			color: white;
+			font-size: 10px;
+			font-family: sans-serif;
+			text-decoration: none;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div id="circle-1"></div>
+		<div id="circle-2"></div>
+		<div id="circle-3"></div>
+	</div>
+	<div class="column-1">
+		<img src="https://cosy.erc.edu/assets/my-erc/img/logo-white.png" alt="ERC logo" style="width: 168px; height: 50px;">
+		<h1 id="align">Welcome</h1>
+		<p id="align" style="font-size: 18px;">Register for an ERC account here.</p>
+		<p id="align" style="font-size: 12px;">
+		Register for a free ERC account here and get access to the webshop, academy and My ERC membership portal. The ERC is a member of the International Liaison Committee On Resuscitation (ILCOR), where ERC experts contribute actively to the worldwide Consensus On Science and Treatment Recommendations (CoSTR). The ERC also supports and initiates scientific studies related to resuscitation. Resuscitation is the official journal of the ERC.</p><br><br>
+		<a class="register" id="align" style="font-size: 12px" href="">REGISTER HERE</a><br><br>
+		
+		<ul>
+			<li><a  href="">
+				<form>
+				<select class="nav">
+				<option value="lang" selected>CHOOSE LANGUAGE</option>
+				<option value="eng">ENGLISH</option>
+				<option value="spain">SPANISH</option>
+			    </select></form>
+		        </a></li>
+			<li><a class="nav" href="">HELP CENTER</a></li>
+			<li><a class="nav" href="">ERC WEBSITE</a></li>
+			<li><a class="nav" href="">ERC WEBSHOP</a></li>
+		</ul>
+	</div>
+	<div class="column-2">
+		<h2>Or login to your account</h2>
+		<form>
+			<input type="email" name="email" placeholder="Your email"><br><br>
+			<input type="password" name="password" placeholder="Password"><br><br>
+		</form>
+		<li>
+			<a id="login" href="">LOGIN</a>
+			<a id="forgot" href="">Forgot password?</a>
+		</li>
+	</div>
+
+</body>
+</html>
